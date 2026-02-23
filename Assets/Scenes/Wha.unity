@@ -483,7 +483,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 3a372ec083e752fa0a9e905042c57a70, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 57fabd5eb317d46b883df50f135516be, type: 2}
+      objectReference: {fileID: 2100000, guid: 9d8fc4671dceb42f8acb26ba1cbc3807, type: 2}
     - target: {fileID: 919132149155446097, guid: 3a372ec083e752fa0a9e905042c57a70, type: 3}
       propertyPath: m_Name
       value: HumanoidMod
@@ -514,7 +514,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewEmptyCSharpScript
   faceMaterial: {fileID: 2100000, guid: 57fabd5eb317d46b883df50f135516be, type: 2}
-  Expression: 
+  Expression: 3
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

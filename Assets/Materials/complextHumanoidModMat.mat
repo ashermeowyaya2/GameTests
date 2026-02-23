@@ -20,8 +20,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: HumanoidMod
-  m_Shader: {fileID: -6465566751694194690, guid: 8eb524c5f718352f5b94f3ff86debde3, type: 3}
+  m_Name: complextHumanoidModMat
+  m_Shader: {fileID: -6465566751694194690, guid: 35a5f58c8b3f89af9878a985f93cc438, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -65,6 +65,14 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Eyebrows:
+        m_Texture: {fileID: 2800000, guid: 0284bc0a61c26e9e2b615d5e4a3c9fe8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Eyes:
+        m_Texture: {fileID: 2800000, guid: 3101984780407dca6a5f8f1ee9eec51a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Layer:
         m_Texture: {fileID: 2800000, guid: 09997204ffa85763ab2bbd9b28e80193, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -75,6 +83,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Mouth:
+        m_Texture: {fileID: 2800000, guid: e2b796d9fcbda898d985bffa2ab7599e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
