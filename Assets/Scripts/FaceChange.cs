@@ -12,8 +12,26 @@ public class FaceChange : MonoBehaviour
             default:
                 Offset(Vector2.zero);
                 break;
-            case "Sad":
+            case "1":
                 Offset(new Vector2(0.25f,0f));
+                break;
+            case "2":
+                Offset(new Vector2(0.5f,0f));
+                break;
+            case "3":
+                Offset(new Vector2(0.75f,0f));
+                break;
+            case "4":
+                Offset(new Vector2(0.0f,-0.25f));
+                break;
+            case "5":
+                Offset(new Vector2(0.25f,-0.25f));
+                break;
+            case "6":
+                Offset(new Vector2(0.5f,-0.25f));
+                break;
+            case "7":
+                Offset(new Vector2(0.75f,-0.25f));
                 break;
         }
     }
