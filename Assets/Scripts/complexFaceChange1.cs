@@ -1,14 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class complexFaceChange : MonoBehaviour
+public class complexFaceChange1 : MonoBehaviour
 {
     public Material _faceMaterial;
     public int Eyebrows;
     public int Eyes;
-    public int EyeShape;
-    //private Texture[] EyeShapes = {_cattyEyes,_bunnyEyes};
     public int Mouth;
     private string ebOffset="_OffsetEyebrows";
     private string eOffset="_OffsetEyes";
@@ -105,30 +101,13 @@ public class complexFaceChange : MonoBehaviour
         Offset(eOffset,Vector2.zero);
         Offset(mOffset,Vector2.zero);
     }
-    public Texture _cattyEyeLash;
-    public Texture _cattyEyeSclera;
-    public Texture _bunnyEyeLash;
-    public Texture _bunnyEyeSclera;
-    public Texture _boredEyeLash;
-    public Texture _boredEyeSclera;
-    public void ChangeEyeShape(int x){
-        switch(x){
-            case 1: // Catty Eyes
-                _faceMaterial.SetTexture("_EyesLashes",_cattyEyeLash);
-                _faceMaterial.SetTexture("_EyesSclera",_cattyEyeSclera);
-                break;
-            case 2: // Bunny Eyes
-                _faceMaterial.SetTexture("_EyesLashes",_bunnyEyeLash);
-                _faceMaterial.SetTexture("_EyesSclera",_bunnyEyeSclera);
-                break;
-            case 3: // Bored Eyes
-                _faceMaterial.SetTexture("_EyesLashes",_boredEyeLash);
-                _faceMaterial.SetTexture("_EyesSclera",_boredEyeSclera);
-                break;
-            default:
-                _faceMaterial.SetTexture("_EyesLashes",_cattyEyeLash);
-                _faceMaterial.SetTexture("_EyesSclera",_cattyEyeSclera);
-                break;
-        }
-    }
+
+    // Update is called once per frame
+    /*void Update()
+    {
+        ChangeEyebrows(Eyebrows);
+        ChangeEyes(Eyes);
+        ChangeMouth(Mouth);
+        
+    }*/
 }
