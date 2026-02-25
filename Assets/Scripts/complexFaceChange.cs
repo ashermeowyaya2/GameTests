@@ -8,10 +8,6 @@ public class complexFaceChange : MonoBehaviour
     public int Eyebrows;
     public int Eyes;
     public int EyeShape;
-    public Texture _cattyEyeLash;
-    public Texture _cattyEyeSclera;
-    public Texture _bunnyEyeLash;
-    public Texture _bunnyEyeSclera;
     //private Texture[] EyeShapes = {_cattyEyes,_bunnyEyes};
     public int Mouth;
     private string ebOffset="_OffsetEyebrows";
@@ -109,6 +105,12 @@ public class complexFaceChange : MonoBehaviour
         Offset(eOffset,Vector2.zero);
         Offset(mOffset,Vector2.zero);
     }
+    public Texture _cattyEyeLash;
+    public Texture _cattyEyeSclera;
+    public Texture _bunnyEyeLash;
+    public Texture _bunnyEyeSclera;
+    public Texture _boredEyeLash;
+    public Texture _boredEyeSclera;
     public void ChangeEyeShape(int x){
         switch(x){
             case 1: // Catty Eyes
@@ -119,22 +121,14 @@ public class complexFaceChange : MonoBehaviour
                 _faceMaterial.SetTexture("_EyesLashes",_bunnyEyeLash);
                 _faceMaterial.SetTexture("_EyesSclera",_bunnyEyeSclera);
                 break;
+            case 3: // Bored Eyes
+                _faceMaterial.SetTexture("_EyesLashes",_boredEyeLash);
+                _faceMaterial.SetTexture("_EyesSclera",_boredEyeSclera);
+                break;
             default:
                 _faceMaterial.SetTexture("_EyesLashes",_cattyEyeLash);
                 _faceMaterial.SetTexture("_EyesSclera",_cattyEyeSclera);
                 break;
         }
-    }
-    void Start(){
-        //ChangeEyeShape(2,EyeShapes);
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        //ChangeEyebrows(Eyebrows);
-        //ChangeEyes(Eyes);
-        //ChangeMouth(Mouth);
-        //ChangeEyeShape(EyeShape);
-        
     }
 }

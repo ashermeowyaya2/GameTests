@@ -65,11 +65,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EyesLashes:
-        m_Texture: {fileID: 2800000, guid: 7838ae5876be25b35a0ff0cc372e9e3d, type: 3}
+        m_Texture: {fileID: 2800000, guid: bed93d5426cee92b48369d2996da8ccc, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EyesSclera:
-        m_Texture: {fileID: 2800000, guid: 235bec20fdf6b6eafaa205d1c89a6318, type: 3}
+        m_Texture: {fileID: 2800000, guid: edd4d2515ee459050b2c9090d9583208, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
