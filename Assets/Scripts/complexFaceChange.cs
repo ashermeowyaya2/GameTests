@@ -96,6 +96,11 @@ public class complexFaceChange : MonoBehaviour
                 break;
         }
     }
+    public void ResetFace(){
+        Offset(ebOffset,Vector2.zero);
+        Offset(eOffset,Vector2.zero);
+        Offset(mOffset,Vector2.zero);
+    }
 
     // Update is called once per frame
     /*void Update()
