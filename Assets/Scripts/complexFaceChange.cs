@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class complexFaceChange : MonoBehaviour
@@ -8,7 +9,6 @@ public class complexFaceChange : MonoBehaviour
     public int Eyebrows;
     public int Eyes;
     public int EyeShape;
-    //private Texture[] EyeShapes = {_cattyEyes,_bunnyEyes};
     public int Mouth;
     private string ebOffset="_OffsetEyebrows";
     private string eOffset="_OffsetEyes";
@@ -111,6 +111,10 @@ public class complexFaceChange : MonoBehaviour
     public Texture _bunnyEyeSclera;
     public Texture _boredEyeLash;
     public Texture _boredEyeSclera;
+    public Texture _defaultEyeLash;
+    public Texture _defaultEyeSclera;
+
+    //private Texture[] Test = { _defaultEyelash, _defaultEyeSclera };
     public void ChangeEyeShape(int x){
         switch(x){
             case 1: // Catty Eyes
@@ -126,8 +130,24 @@ public class complexFaceChange : MonoBehaviour
                 _faceMaterial.SetTexture("_EyesSclera",_boredEyeSclera);
                 break;
             default:
-                _faceMaterial.SetTexture("_EyesLashes",_cattyEyeLash);
-                _faceMaterial.SetTexture("_EyesSclera",_cattyEyeSclera);
+                _faceMaterial.SetTexture("_EyesLashes",_defaultEyeLash);
+                _faceMaterial.SetTexture("_EyesSclera",_defaultEyeSclera);
+                break;
+        }
+    }
+    public Texture bushyEyebrows;
+    public Texture lineEyebrows;
+    public Texture smallEyebrows;
+    public void ChangeEyebrowShape(int x){
+        switch(x){
+            case 1: 
+                _faceMaterial.SetTexture("_Eyebrows",bushyEyebrows);
+                break;
+            case 2: 
+                _faceMaterial.SetTexture("_Eyebrows",smallEyebrows);
+                break;
+            default:
+                _faceMaterial.SetTexture("_Eyebrows",lineEyebrows);
                 break;
         }
     }
