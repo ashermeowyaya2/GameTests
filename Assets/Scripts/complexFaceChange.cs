@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class complexFaceChange : MonoBehaviour
@@ -8,7 +9,6 @@ public class complexFaceChange : MonoBehaviour
     public int Eyebrows;
     public int Eyes;
     public int EyeShape;
-    //private Texture[] EyeShapes = {_cattyEyes,_bunnyEyes};
     public int Mouth;
     private string ebOffset="_OffsetEyebrows";
     private string eOffset="_OffsetEyes";
@@ -113,6 +113,8 @@ public class complexFaceChange : MonoBehaviour
     public Texture _boredEyeSclera;
     public Texture _defaultEyeLash;
     public Texture _defaultEyeSclera;
+
+    //private Texture[] Test = { _defaultEyelash, _defaultEyeSclera };
     public void ChangeEyeShape(int x){
         switch(x){
             case 1: // Catty Eyes
