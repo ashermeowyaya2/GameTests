@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class complexFaceChange : MonoBehaviour
 {
@@ -70,6 +71,30 @@ public class complexFaceChange : MonoBehaviour
             case 7:
                 Offset(eOffset,new Vector2(0.75f,-0.25f));
                 break;
+            case 8:
+                Offset(eOffset,new Vector2(0.0f,-0.5f));
+                break;
+            case 9:
+                Offset(eOffset,new Vector2(0.25f,-0.5f));
+                break;
+            case 10:
+                Offset(eOffset,new Vector2(0.5f,-0.5f));
+                break;
+            case 11:
+                Offset(eOffset,new Vector2(0.75f,-0.5f));
+                break;
+            case 12:
+                Offset(eOffset,new Vector2(0.0f,-0.75f));
+                break;
+            case 13:
+                Offset(eOffset,new Vector2(0.25f,-0.75f));
+                break;
+            case 14:
+                Offset(eOffset,new Vector2(0.5f,-0.75f));
+                break;
+            case 15:
+                Offset(eOffset,new Vector2(0.75f,-0.75f));
+                break;
         }
     }
     public void ChangeMouth(int exp){
@@ -97,6 +122,30 @@ public class complexFaceChange : MonoBehaviour
                 break;
             case 7:
                 Offset(mOffset,new Vector2(0.75f,-0.25f));
+                break;
+            case 8:
+                Offset(mOffset,new Vector2(0.0f,-0.5f));
+                break;
+            case 9:
+                Offset(mOffset,new Vector2(0.25f,-0.5f));
+                break;
+            case 10:
+                Offset(mOffset,new Vector2(0.5f,-0.5f));
+                break;
+            case 11:
+                Offset(mOffset,new Vector2(0.75f,-0.5f));
+                break;
+            case 12:
+                Offset(mOffset,new Vector2(0.0f,-0.75f));
+                break;
+            case 13:
+                Offset(mOffset,new Vector2(0.25f,-0.75f));
+                break;
+            case 14:
+                Offset(mOffset,new Vector2(0.5f,-0.75f));
+                break;
+            case 15:
+                Offset(mOffset,new Vector2(0.75f,-0.75f));
                 break;
         }
     }
@@ -172,4 +221,11 @@ public class complexFaceChange : MonoBehaviour
         }
         _faceMaterial.SetColor(stringSelection,fcp.color);
     }
+        public Slider mainSlider;
+
+        public void EyeSlider(int sliderValue){
+            sliderValue = (int)mainSlider.value;
+            ChangeEyes(sliderValue);
+            //Debug.Log("Change detected: " + sliderValue.ToString());
+        }
 }
