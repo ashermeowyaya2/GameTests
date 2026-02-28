@@ -6164,10 +6164,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::complexFaceChange
   _faceMaterial: {fileID: 2100000, guid: a7656070108bac789bc4269d671dff98, type: 2}
-  Eyebrows: 0
-  Eyes: 0
-  EyeShape: 0
-  Mouth: 0
   _cattyEyeLash: {fileID: 2800000, guid: bed93d5426cee92b48369d2996da8ccc, type: 3}
   _cattyEyeSclera: {fileID: 2800000, guid: edd4d2515ee459050b2c9090d9583208, type: 3}
   _bunnyEyeLash: {fileID: 2800000, guid: 7838ae5876be25b35a0ff0cc372e9e3d, type: 3}
