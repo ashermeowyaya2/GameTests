@@ -53,7 +53,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Eyebrows:
-        m_Texture: {fileID: 2800000, guid: c8f1b0220da183acbaca5c7967ca0279, type: 3}
+        m_Texture: {fileID: 2800000, guid: 7087a1b455b6206e8a8dd2334625d6ef, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Eyes:
@@ -65,11 +65,12 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EyesLashes:
-        m_Texture: {fileID: 2800000, guid: bed93d5426cee92b48369d2996da8ccc, type: 3}
+
+        m_Texture: {fileID: 2800000, guid: 7838ae5876be25b35a0ff0cc372e9e3d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EyesSclera:
-        m_Texture: {fileID: 2800000, guid: edd4d2515ee459050b2c9090d9583208, type: 3}
+
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -153,7 +154,9 @@ Material:
     - _EyebrowColour: {r: 0.37887147, g: 0.46427867, b: 0.6226415, a: 1}
     - _OffsetEyebrows: {r: 0, g: 0, b: 0, a: 0}
     - _OffsetEyes: {r: 0, g: 0, b: 0, a: 0}
-    - _OffsetMouth: {r: 0.75, g: 0, b: 0, a: 0}
+
+    - _OffsetMouth: {r: 0, g: 0, b: 0, a: 0}
+
     - _SkinColour: {r: 0.9528302, g: 0.4539427, b: 0.4539427, a: 1}
     - _SkinColourDark: {r: 0, g: 0, b: 0, a: 1}
     - _SkinColourLight: {r: 1, g: 0.8025578, b: 0.6556604, a: 1}
