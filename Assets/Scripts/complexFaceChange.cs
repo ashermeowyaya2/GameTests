@@ -6,10 +6,10 @@ using UnityEngine;
 public class complexFaceChange : MonoBehaviour
 {
     public Material _faceMaterial;
-    public int Eyebrows;
-    public int Eyes;
-    public int EyeShape;
-    public int Mouth;
+    private int Eyebrows;
+    private int Eyes;
+    private int EyeShape;
+    private int Mouth;
     private string ebOffset="_OffsetEyebrows";
     private string eOffset="_OffsetEyes";
     private string mOffset="_OffsetMouth";
@@ -150,5 +150,26 @@ public class complexFaceChange : MonoBehaviour
                 _faceMaterial.SetTexture("_Eyebrows",lineEyebrows);
                 break;
         }
+    }
+
+    public FlexibleColorPicker fcp;
+    private string stringSelection;
+    public void Selection(int selection){
+        switch(selection){
+            case 1:
+                stringSelection="_SkinColourLight";
+                break;
+            case 2:
+                stringSelection="_EyeColour";
+                break;
+            case 3:
+                stringSelection="_EyebrowColour";
+                break;
+            default:
+                stringSelection="_SkinColourLight";
+                break;
+
+        }
+        _faceMaterial.SetColor(stringSelection,fcp.color);
     }
 }
