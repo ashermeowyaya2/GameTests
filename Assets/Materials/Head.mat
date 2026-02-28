@@ -146,7 +146,7 @@ Material:
     - _EyeColour: {r: 0.2056957, g: 0.12192887, b: 0.22933331, a: 1}
     - _EyebrowColour: {r: 0.17760003, g: 0.5324404, b: 0.78933334, a: 1}
     - _OffsetEyebrows: {r: 0.75, g: 0, b: 0, a: 0}
-    - _OffsetEyes: {r: 0, g: 0, b: 0, a: 0}
+    - _OffsetEyes: {r: 0.25, g: 0, b: 0, a: 0}
     - _OffsetMouth: {r: 0.25, g: -0.5, b: 0, a: 0}
     - _SkinColourDark: {r: 0, g: 0, b: 0, a: 1}
     - _SkinColourLight: {r: 0.896, g: 0.72100925, b: 0.61376, a: 1}
