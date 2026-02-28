@@ -8982,7 +8982,7 @@ MonoBehaviour:
   lineEyebrows: {fileID: 2800000, guid: 1663dadee9f5947e8a5115d58a1408fc, type: 3}
   smallEyebrows: {fileID: 2800000, guid: 7087a1b455b6206e8a8dd2334625d6ef, type: 3}
   fcp: {fileID: 602420809}
-  mainSlider: {fileID: 0}
+  mainSlider: {fileID: 2080979840}
 --- !u!114 &1824017913
 MonoBehaviour:
   m_ObjectHideFlags: 0
