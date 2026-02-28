@@ -2,14 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class complexFaceChange : MonoBehaviour
 {
     public Material _faceMaterial;
-    public int Eyebrows;
-    public int Eyes;
-    public int EyeShape;
-    public int Mouth;
+    private int Eyebrows;
+    private int Eyes;
+    private int EyeShape;
+    private int Mouth;
     private string ebOffset="_OffsetEyebrows";
     private string eOffset="_OffsetEyes";
     private string mOffset="_OffsetMouth";
@@ -70,6 +71,30 @@ public class complexFaceChange : MonoBehaviour
             case 7:
                 Offset(eOffset,new Vector2(0.75f,-0.25f));
                 break;
+            case 8:
+                Offset(eOffset,new Vector2(0.0f,-0.5f));
+                break;
+            case 9:
+                Offset(eOffset,new Vector2(0.25f,-0.5f));
+                break;
+            case 10:
+                Offset(eOffset,new Vector2(0.5f,-0.5f));
+                break;
+            case 11:
+                Offset(eOffset,new Vector2(0.75f,-0.5f));
+                break;
+            case 12:
+                Offset(eOffset,new Vector2(0.0f,-0.75f));
+                break;
+            case 13:
+                Offset(eOffset,new Vector2(0.25f,-0.75f));
+                break;
+            case 14:
+                Offset(eOffset,new Vector2(0.5f,-0.75f));
+                break;
+            case 15:
+                Offset(eOffset,new Vector2(0.75f,-0.75f));
+                break;
         }
     }
     public void ChangeMouth(int exp){
@@ -97,6 +122,30 @@ public class complexFaceChange : MonoBehaviour
                 break;
             case 7:
                 Offset(mOffset,new Vector2(0.75f,-0.25f));
+                break;
+            case 8:
+                Offset(mOffset,new Vector2(0.0f,-0.5f));
+                break;
+            case 9:
+                Offset(mOffset,new Vector2(0.25f,-0.5f));
+                break;
+            case 10:
+                Offset(mOffset,new Vector2(0.5f,-0.5f));
+                break;
+            case 11:
+                Offset(mOffset,new Vector2(0.75f,-0.5f));
+                break;
+            case 12:
+                Offset(mOffset,new Vector2(0.0f,-0.75f));
+                break;
+            case 13:
+                Offset(mOffset,new Vector2(0.25f,-0.75f));
+                break;
+            case 14:
+                Offset(mOffset,new Vector2(0.5f,-0.75f));
+                break;
+            case 15:
+                Offset(mOffset,new Vector2(0.75f,-0.75f));
                 break;
         }
     }
@@ -151,4 +200,32 @@ public class complexFaceChange : MonoBehaviour
                 break;
         }
     }
+
+    public FlexibleColorPicker fcp;
+    private string stringSelection;
+    public void Selection(int selection){
+        switch(selection){
+            case 1:
+                stringSelection="_SkinColourLight";
+                break;
+            case 2:
+                stringSelection="_EyeColour";
+                break;
+            case 3:
+                stringSelection="_EyebrowColour";
+                break;
+            default:
+                stringSelection="_SkinColourLight";
+                break;
+
+        }
+        _faceMaterial.SetColor(stringSelection,fcp.color);
+    }
+        public Slider mainSlider;
+
+        public void EyeSlider(int sliderValue){
+            sliderValue = (int)mainSlider.value;
+            ChangeEyes(sliderValue);
+            //Debug.Log("Change detected: " + sliderValue.ToString());
+        }
 }
